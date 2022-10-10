@@ -246,9 +246,9 @@
         color: #000000;
         position: relative;
         border: none;
-        transition: .5s;
-        &::before{
-            content: '';
+        transition: 0.5s;
+        &::before {
+            content: "";
             position: absolute;
             left: 5px;
             bottom: 5px;
@@ -257,17 +257,62 @@
             background-color: #000;
             border: 1px solid #000;
             border-radius: 12px;
-            transition: .5s;
+            transition: 0.5s;
         }
-        &:hover{
+        &:hover {
             background-color: #000;
             color: #fff;
-            &::before{
-                content: '';
+            &::before {
+                content: "";
                 background-color: #fff;
                 border: 1px solid #fff;
-                transition: .5s;
+                transition: 0.5s;
             }
         }
+    }
+}
+
+// photo
+.japan {
+    background-image: url(../img/photo-1.png);
+}
+.costarica{
+    background-image: url(../img/photo-2.png);
+}
+.nepal{
+    background-image: url(../img/photo-3.png);
+}
+.photo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 554px 0px 40px;
+    position: relative;
+    // .photo__text-box
+
+    &__text-box {
+        max-width: 300px;
+        width: 100%;
+        position: absolute;
+        top: 259px;
+        right: 120px;
+    }
+
+    // .photo__title
+
+    &__title {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    // .photo__text
+
+    &__text {
+        font-size: 14px;
+        line-height: 143%;
+        color: #c0c0c0;
     }
 }
