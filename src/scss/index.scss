@@ -1,0 +1,79 @@
+// header
+
+.header {
+    background-color: #181818;
+    padding: 20px 0px 20px;
+    // header__box
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .header__logo
+
+    &__logo {
+    }
+
+    // .header__inner
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .header__nav
+
+    &__nav {
+    }
+
+    // .header__nav-link
+
+    &__nav-link {
+        margin-right: 32px;
+        font-size: 13px;
+        line-height: 154%;
+        color: #ffffff;
+        position: relative;
+        transition: 0.4s ease-out;
+        &::after {
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #fff;
+            content: "";
+            transition: 0.4s ease-out;
+        }
+        &:hover {
+            color: #fff;
+            transition: 0.4s ease-out;
+        }
+        &:hover:after,
+        &:focus:after {
+            width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+        }
+    }
+
+    // .header__button
+
+    &__button {
+        cursor: pointer;
+        padding: 8px 20px 12px;
+        border: 1px solid #fff;
+        background-color: #ffffff;
+        border-radius: 14px;
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: 0.4px;
+        color: #000000;
+        transition: .5s;
+        &:hover{
+            background-color: transparent;
+            color: #fff;
+        }
+    }
+}
