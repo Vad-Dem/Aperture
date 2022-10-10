@@ -464,3 +464,231 @@
     }
 }
 
+// footer
+
+.footer {
+    background-color: #000;
+    padding: 100px 0px;
+    color: #fff;
+    // .footer__start
+
+    &__start {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 36px;
+        border-bottom: 2px solid #fff;
+    }
+
+    // .footer__start-box
+
+    &__start-box {
+    }
+    // .footer__logo
+
+    &__logo {
+        margin-bottom: 20px;
+    }
+
+    // .footer__logotext
+
+    &__logotext {
+        font-size: 13px;
+        line-height: 154%;
+        color: #c0c0c0;
+    }
+
+    // .footer__start-links
+
+    &__start-links {
+        display: flex;
+        justify-content: start;
+    }
+
+    // .footer__linklist
+
+    &__linklist {
+        margin-right: 55px;
+        &:last-child {
+            margin-right: 101px;
+        }
+    }
+
+    // .footer__list-title
+
+    &__list-title {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #c0c0c0;
+        margin-bottom: 10px;
+    }
+
+    // .footer__list
+
+    &__list {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+    }
+
+    // .footer__list-link
+
+    &__list-link {
+        margin-bottom: 10px;
+        a {
+            color: #ffffff;
+        }
+        position: relative;
+        transition: 0.4s ease-out;
+        &::after {
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #fff;
+            content: "";
+            transition: 0.4s ease-out;
+        }
+        &:hover {
+            color: #fff;
+            transition: 0.4s ease-out;
+        }
+        &:hover:after,
+        &:focus:after {
+            width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+        }
+    }
+
+    // .footer__midle
+
+    &__midle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 36px 0px;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+    }
+
+    // .footer__midle-box
+
+    &__midle-box {
+    }
+
+    // .footer__midle-subtitle
+
+    &__midle-subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+
+    // .footer__midle-title
+
+    &__midle-title {
+        font-size: 13px;
+        line-height: 154%;
+        color: #c0c0c0;
+    }
+
+    // .footer__form
+
+    &__form {
+        position: relative;
+    }
+
+    // .footer__form-input
+
+    &__form-input {
+        input {
+            width: 460px;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 13px 80px 13px 13px;
+        }
+    }
+
+    // .footer__form-btn
+
+    &__form-btn {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        background-color: #000000;
+        border-radius: 11px;
+        border: 1px solid #000;
+        color: #000;
+        cursor: pointer;
+        transition: 0.5s;
+        font-size: 14px;
+        line-height: 143%;
+        padding: 3px 10px;
+        &:hover {
+            background-color: #fff;
+        }
+    }
+
+    // .footer__end
+
+    &__end {
+        padding: 56px 0px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .footer__end-text
+
+    &__end-text {
+        font-size: 14px;
+        line-height: 143%;
+        color: #c0c0c0;
+    }
+
+    // .footer__social
+
+    &__social {
+    }
+
+    // .footer__social-item
+
+    &__social-item {
+        margin-left: 20px;
+        transition: .5s;
+    }
+}
+
+.tw {
+    &:hover{
+        transition: .5s;
+        path{
+            transition: .5s;
+            fill: #1DA1F2;
+        }
+    }
+}
+.inst {
+    &:hover{
+        transition: .5s;
+        path{
+            transition: .5s;
+            fill: #833ab4;
+        }
+    }
+}
+.face {
+    &:hover{
+        transition: .5s;
+        path{
+            fill: #3b5998;
+            transition: .5s;
+        }
+    }
+}
