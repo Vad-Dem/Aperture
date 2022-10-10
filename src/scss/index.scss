@@ -365,7 +365,7 @@
 
     // .gear__box
 
-    &__box{
+    &__box {
         background-image: url(../img/gear.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -375,9 +375,52 @@
         margin-right: -200px;
     }
 }
-.gear-info{
+.gear-info {
     position: absolute;
     bottom: 40px;
     right: 40px;
-    margin-right: 0;       
+    margin-right: 0;
+}
+
+// clients
+
+.clients {
+    background-color: #000000;
+    padding: 120px 0px 100px;
+    color: #fff;
+    // .clients__title
+
+    &__title {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 105%;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 15px;
+    }
+
+    // .clients__text
+
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 125%;
+        text-align: center;
+        color: #c0c0c0;
+        margin-bottom: 42px;
+    }
+
+    // .clients__inner
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 0px;
+    }
+
+    // .clients__inner-img
+
+    &__inner-img {
+    }
 }
