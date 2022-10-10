@@ -424,3 +424,43 @@
     &__inner-img {
     }
 }
+
+// help
+
+.help {
+    background-color: #000;
+    padding: 120px 0px 100px;
+    color: #fff;
+    // .help__textbox
+
+    &__textbox {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    // .help__title
+
+    &__title {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 105%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    // .help__text
+
+    &__text {
+        font-size: 24px;
+        line-height: 125%;
+        text-align: center;
+        color: #c0c0c0;
+        margin-bottom: 22px;
+    }
+}
+
